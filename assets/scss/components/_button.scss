@@ -1,0 +1,14 @@
+/*=============== BUTTON ===============*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    font-size: var(--normal-font-size);
+    transition: .3s;
+
+    &:hover{
+        background-color: var(--first-color-alt);
+    }
+}

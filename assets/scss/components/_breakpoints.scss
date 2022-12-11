@@ -1,0 +1,281 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .home__car{
+        column-gap: 2rem;
+    }
+
+    .about__card{
+        width: 150px;
+    }
+
+    .offer{
+        &__container{
+            grid-template-rows: max-content 180px;
+        }
+        &__img{
+            width: 340px;
+        }
+    }
+
+    .logos__container{
+        gap: 2.5rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    .about__group{
+        width: 350px;
+        justify-self: center;
+    }
+
+    .features__map{
+        left: 0;
+        right: 0;
+    }
+
+    .featured__content{
+        grid-template-columns: repeat(2, 228px);
+    }
+
+    .offer{
+        &__container{
+            grid-template-rows: initial;
+            grid-template-columns: .5fr;
+            justify-content: center;
+        }
+        &__img{
+            position: relative;
+            bottom: initial;
+            right: initial;
+        }
+        &__data{
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 767px){
+    .section{
+        padding: 7rem 0 2rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+
+        &__toggle,
+        &__close{
+            display: none;
+        }
+        &__list{
+            flex-direction: row;
+            column-gap: 3rem;
+            padding-top: 0;
+        }
+        &__link{
+            font-size: var(--normal-font-size);
+            text-transform: initial;
+        }
+    }
+
+    .about__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logos__container{
+        gap: 4rem 8rem;
+    }
+
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1040px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   .shape{
+       &__big{
+           width: 500px;
+           height: 500px;
+       }
+       &__small{
+           width: 400px;
+           height: 400px;
+       }
+   }
+
+    .home{
+        &__container{
+            padding-top: 2rem;
+        }
+        &__img{
+            width: 380px;
+        }
+        &__car{
+            column-gap: 7rem;
+
+            &-icon{
+                font-size: 1.25rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .about{
+        &__container{
+            column-gap: 6rem;
+            align-items: center;
+        }
+        &__group,
+        &__img{
+            width: 480px;
+        }
+        &__card{
+            width: 198px;
+            padding: 1rem 1.25rem;
+        }
+        &__description{
+            padding-right: 4rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    .popular{
+        &__container{
+            width: 875px;
+            padding-top: 3rem;
+        }
+        &__card{
+            width: 258px;
+            border-radius: 1.25rem;
+            margin-bottom: 5rem;
+        }
+        &__img{
+            width: 180px;
+            margin: .75rem 0 1.25rem 2rem;
+        }
+    }
+
+    .features{
+        &__container{
+            padding: 2rem 0 3rem;
+        }
+        &__img{
+            width: 200px;
+        }
+        &__card{
+            width: 127px;
+            padding: .75rem 2.5rem;
+
+            &-1{
+                left: -1rem;
+            }
+            &-2{
+                right: -2.5rem;
+            }
+            &-3{
+                bottom: 7rem;
+                left: -1rem;
+            }
+        }
+        &__map{
+            width: 650px;
+            top: 11rem;
+        }
+    }
+
+    .featured{
+        &__container{
+            padding-bottom: 2.5rem;
+        }
+        &__filters{
+            column-gap: 2rem;
+            margin-bottom: 4.5rem;
+        }
+        &__item{
+            width: 52px;
+            height: 52px;
+
+            & img{
+                width: 2rem;
+            }
+        }
+        &__content{
+            grid-template-columns: repeat(3, 248px);
+            gap: 4rem;
+        }
+    }
+
+    .offer{
+        &__container{
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 5rem;
+            align-items: center;
+            padding-bottom: 2rem;
+        }
+        &__data,
+        &__title{
+            text-align: initial;
+        }
+        &__data{
+            margin-bottom: 0;
+        }
+        &__description{
+            padding-right: 6rem;
+        }
+        &__img{
+            width: 450px;
+        }
+    }
+
+    .logos{
+        &__container{
+            grid-template-columns: repeat(6, max-content);
+        }
+        &__img{
+            width: 50px;
+        }
+    }
+
+    .footer{
+        &__container{
+            grid-template-columns: repeat(4, max-content);
+            justify-content: space-between;
+        }
+        &__logo{
+            column-gap: .5rem;
+
+            & i{
+                font-size: 2rem;
+            }
+        }
+        &__title{
+            margin-bottom: 1.5rem;
+        }
+        &__links{
+            row-gap: .75rem;
+        }
+        &__social-link{
+            font-size: 1.5rem;
+        }
+        &__copy{
+            margin-top: 8rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .scrollup{
+        right: 3rem;
+    }
+}

@@ -1,0 +1,59 @@
+/*=============== FEATURES ===============*/
+.features{
+    overflow: hidden;
+    position: relative;
+
+    &__container{
+        padding-top: 2rem;
+        grid-template-columns: 285px;
+        justify-content: center;
+    }
+    &__group{
+        display: grid;
+        position: relative;
+        z-index: 10;
+    }
+    &__img{
+        width: 150px;
+        justify-self: center;
+    }
+    &__card{
+        width: 112px;
+        background-color: hsla(0, 0%, 100%, .1);
+        backdrop-filter: blur(16px);
+        border-radius: 1.25rem;
+        padding: .75rem 2rem;
+        text-align: center;
+        color: var(--title-color);
+        position: absolute;
+
+        &-1{
+            top: 4rem;
+            left: 1.5rem;
+        }
+        &-2{
+            top: 8rem;
+            right: 1rem;
+        }
+        &-3{
+            left: 1.5rem;
+            bottom: 2rem;
+        }
+        &-title{
+            font-size: var(--h3-font-size);
+            margin-bottom: .25rem;
+        }
+        &-description{
+            font-size: var(--smaller-font-size);
+        }
+    }
+    &__map{
+        max-width: initial;
+        width: 450px;
+        position: absolute;
+        top: 8rem;
+        left: -3rem;
+        margin: auto;
+        transform: rotate(-22deg);
+    }
+}

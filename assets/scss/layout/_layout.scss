@@ -1,0 +1,46 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container{
+    max-width: 1024px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding: 4.5rem 0 2rem;
+
+    &__title{
+        font-size: var(--h2-font-size);
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.main{
+    overflow: hidden;
+}
+
+.shape{
+    background-color: hsla(219, 33%, 32%, .5);
+    filter: blur(112px);
+    border-radius: 50%;
+
+    &__big{
+        width: 400px;
+        height: 400px;
+    }   
+    &__small{
+        width: 300px;
+        height: 300px;
+    }
+
+    &__smaller{
+        width: 180px;
+        height: 180px;
+        filter: blur(64px);
+    }
+}

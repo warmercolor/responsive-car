@@ -1,0 +1,39 @@
+/*=============== ABOUT ===============*/
+.about{
+    &__container{
+        row-gap: 6rem;
+    }
+    &__group{
+        position: relative;
+    }
+    &__img{
+        width: 310px;
+        border-radius: .5rem;
+    }
+    &__card{
+        width: 180px;
+        position: absolute;
+        right: 0;
+        bottom: -2.5rem;
+        background-color: hsla(0, 0%, 100%, .1);
+        backdrop-filter: blur(16px);
+        padding: 1rem .75rem;
+        text-align: center;
+        border-radius: 1.25rem;
+
+        &-title{
+            font-size: var(--h3-font-size);
+            margin-bottom: .5rem;
+        }
+        &-description{
+            font-size: var(--smaller-font-size);
+        }
+    }
+    &__title{
+        text-align: initial;
+        margin-bottom: 2rem;
+    }
+    &__description{
+        margin-bottom: 2rem;
+    }
+}

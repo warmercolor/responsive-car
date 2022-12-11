@@ -1,0 +1,78 @@
+/*=============== FOOTER ===============*/
+.footer{
+    position: relative;
+    overflow: hidden;
+
+    & .shape__big,
+    & .shape__small{
+        position: absolute;
+    }
+
+    & .shape__big{
+        width: 300px;
+        height: 300px;
+        left: -12rem;
+        top: 6rem;
+    }
+    
+    & .shape__small{
+        right: -13rem;
+        bottom: -6rem;
+    }
+
+    &__container{
+        row-gap: 2.5rem;
+        position: relative;
+    }
+    &__logo{
+        display: inline-flex;
+        align-items: center;
+        column-gap: .25rem;
+        color: var(--title-color);
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
+        margin-bottom: 1.25rem;
+        transition: .3s;
+
+        & i{
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+    &__title{
+       font-size: var(--h3-font-size);
+       margin-bottom: 1.25rem;
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+    &__link,
+    &__social-link{
+        color: var(--text-color);
+        transition: .3s;
+
+        &:hover{
+            color: var(--title-color);
+        }
+    }
+    &__social{
+        display: flex;
+        column-gap: 1.5rem;
+
+        &-link{
+            font-size: 1.25rem;
+        }
+    }
+    &__copy{
+        display: block;
+        margin-top: 4.5rem;
+        text-align: center;
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+    }
+}

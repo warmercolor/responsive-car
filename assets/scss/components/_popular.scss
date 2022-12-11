@@ -1,0 +1,86 @@
+/*=============== POPULAR ===============*/
+.popular{
+    &__container{
+        padding-top: 1rem;
+    }
+    &__card{
+        position: relative;
+        width: 228px;
+        background-color: var(--container-color);
+        padding: 2rem 1.5rem 1.5rem;
+        border-radius: 1rem;
+        margin-bottom: 3.5rem;
+        overflow: hidden;
+
+        &:hover .popular__img{
+            transform: translateY(-.25rem);
+        }   
+    }
+    &__card .shape__smaller{
+        position: absolute;
+        top: -2.5rem;
+        left: -2.5rem;
+    }
+    &__title,
+    &__subtitle,
+    &__img{
+        position: relative;
+    }
+    &__title{
+        font-size: var(--h2-font-size);
+        margin-bottom: .25rem;
+    }
+    &__subtitle{
+        font-size: var(--normal-font-size);
+        color: var(--text-color);
+        font-weight: 400;
+    }
+    &__img{
+        width: 160px;
+        margin: .75rem 0 1.25rem 1.5rem;
+        transition: .3s;
+    }
+    &__data{
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: .5rem 1.25rem;
+        margin-bottom: 2rem;
+
+        &-group{
+            display: inline-flex;
+            align-items: center;
+            column-gap: .5rem;
+            font-size: var(--smaller-font-size);
+            color: var(--white-color);
+        }
+        & i{
+            font-size: 1rem;
+        }
+    }
+    &__price{
+        font-size: var(--h3-font-size);
+    }
+    &__button{
+        border: none;
+        outline: none;
+        padding: .75rem 1rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-radius: 1rem 0 1rem 0;
+        cursor: pointer;
+
+        & i{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+/* Swiper class */
+.swiper-pagination-bullet{
+    background: var(--text-color);
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--first-color);
+}
